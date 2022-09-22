@@ -11,8 +11,10 @@ the beginning. The rules, even though with simple variations are:
 1. Begin with everyone on the starting line.
 2. When the curator shouts 'Green Light,' everyone rushes to the finish line.
 3. When the curator says 'Red Light,' everyone must come to a halt.
-  ●  If players are still advancing when the 'Red Light' signal is given, they must return
+  
+    ●  If players are still advancing when the 'Red Light' signal is given, they must return
 to the starting line.
+
 4. Begin a new round when everyone has crossed the finish line or when the majority of
 players have crossed the finish line.
 The project attempted to construct the game environment, states, agents, and reward to train
@@ -47,6 +49,8 @@ The player, also known as the agent for the RL scheme, has a move function that 
 the moving forward or up capability. The forward key has been included into the pressed key
 function of pygame. The agent's states are move and do nothing (stop/pause). In this scenario,
 the game states will be active, loss, or win.
+![image](resources/game.jpg)
+
 The gaming environment makes use of game states rather than a score and reward system.
 Despite the fact that we included a reward system, there is no continuous scoring that climbs as
 a player approaches the finish line; instead, a player is awarded simply for being alive.
@@ -59,6 +63,7 @@ q-learning model of a sequential feedforward convolutional neural network with d
 learning rate, we employed an Adam optimizer.The output layers are made up of two neurons, one for each highest anticipated reward for
 each action. Then we select the action with the greatest potential payoff (Q-value). The build
 model is listed in the annex.
+![image](resources/model.jpg)
 
 # Future Work
 There are features left over from the game's design for the goal of developing a better output.
